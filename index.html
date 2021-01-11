@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<style>
+body{
+	margin:0;
+	padding:0;
+	font-family:sans-serif;
+	background:#3E0303;
+}
+h1{
+	font-size: 50px;
+	color:white;
+	font-family:sans-serif;
+}
+.box{
+	width:300px;
+	padding:40px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	background:#white;
+	text-align:center;
+}
+.box input[type="text"], .box input[type="password"]{
+	border:0;
+	background: none;
+	display :block;
+	margin:20px auto;
+	text-align:center;
+	border:2px solid #EE5B28;
+	padding:14px 10px;
+	width:200px;
+	outline:none;
+	color:white;
+
+	transition:0.255;
+}
+.box input[type="submit"]{
+	border:0;
+	background:#EE5B28;
+	display :block;
+	margin:20px auto;
+	text-align:center;
+	border:2px solid #EE5B28;
+	padding:14px 50px;
+	width:100px;
+	outline:none;
+	color:white;
+	border-radius:24px;
+	transition:0.255;
+}
+}
+
+</style>
+
+<body>
+    {% block content %}
+    {% endblock%}
+
+</body>
+</html>
