@@ -1,0 +1,91 @@
+<html>
+<head>
+	<title>Registration</title>
+</head>
+<style>
+	body{
+		background-color:#3E0303   ;
+		
+	}
+nav{
+ 	float:right;
+ }
+ ul{
+ 	border-left:3px solid coral;
+ }
+ li{
+ 	display:inline;
+ 	padding-right:1.7rem;
+}
+li a{
+	color:white;
+	text-decoration:none;
+	font-weight:bold;
+}
+.registration-form{
+	position:absolute;
+	top:-10%;
+	left:50%;
+	transform:translate(-50%,50%);
+	width:400px;
+	color:white;
+}
+.registration-form h1{
+    font-size:30px;
+    text-align:center;
+    text-transform: uppercase;
+    margin:40px;
+}
+.registration-form p{
+	font-size:20px;
+	margin:15px;
+}
+.registration-form input{
+	font-size: 16px;
+	padding:10px 10px;
+	width:100%;
+	border:0;
+	outline:none;
+}
+.registration-form button{
+	font-size:18px;
+	font-weight:bold;
+	margin:20px 5px;
+	padding:15x 15px;
+	width:50%;
+	border:0;
+	background-color:#EE5B28 ;
+	border-radius: 5px;
+
+}
+.registration-form button:hover{
+	background-color:white;
+	color:black;
+}
+
+</style>
+<body>
+	<nav>
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Movies</a></li>
+		<li><a href="#">login</a></li>
+		<li><a href="#">help</a></li>
+	</ul>
+</nav>
+<div class = "registration-form"> 
+	<h1>Sign up</h1>
+	<form action = "#" method = "post">
+		<p>Full Name:</p>
+		<input type = "text" name = "fullname" placeholder="Full Name">
+		<p>User Name:</p>
+		<input type="text" name="username" placeholder="User Name">
+		<p>Email:</p>
+		<input type="text" name="email" placeholder="Email">
+		<p>Password:</p>
+		<input type="password" name="password" placeholder="password">
+		<button type="submit"> Sign up </button>
+	</form>
+
+</body>
+</html>
